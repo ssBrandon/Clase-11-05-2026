@@ -1,0 +1,48 @@
+#Codigo
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main() {
+    srand(time(0));
+
+    int opcion;
+    int numeroSecreto = rand() % 100 + 1;
+    int intento;
+    int intentos = 0;
+
+    cout << "==============================" << endl;
+    cout << "   MINI JUEGO: ADIVINA NUMERO" << endl;
+    cout << "==============================" << endl;
+
+    do {
+        cout << "\nIngresa un numero del 1 al 100: ";
+        cin >> intento;
+
+        intentos++;
+
+        if (intento > numeroSecreto) {
+            cout << "Muy alto." << endl;
+        } else if (intento < numeroSecreto) {
+            cout << "Muy bajo." << endl;
+        } else {
+            cout << "\n¡Ganaste!" << endl;
+            cout << "Numero correcto: " << numeroSecreto << endl;
+            cout << "Intentos usados: " << intentos << endl;
+        }
+
+    } while (intento != numeroSecreto);
+
+    cout << "\nGracias por jugar." << endl;
+
+    return 0;
+}
+
+#Explicacion 
+Este programa consiste en un juego sencillo para adivinar un número. Primero, el sistema genera automáticamente un número aleatorio entre 1 y 100. Después, el usuario debe ingresar números intentando descubrir cuál es el correcto.
+
+Cada vez que el usuario escribe un número, el programa compara ese valor con el número secreto. Si el número ingresado es mayor, muestra el mensaje “Muy alto”; si es menor, muestra “Muy bajo”. El proceso se repite hasta que el usuario logre adivinar el número correcto.
+
+Además, el programa lleva un contador de intentos para mostrar cuántas veces el usuario intentó antes de ganar. Para desarrollar este programa se utilizaron variables, estructuras condicionales `if-else`, un ciclo `do while` y funciones para generar números aleatorios.
