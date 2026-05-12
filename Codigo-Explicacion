@@ -41,8 +41,8 @@ int main() {
 }
 
 #Explicacion 
-Este programa consiste en un juego sencillo para adivinar un número. Primero, el sistema genera automáticamente un número aleatorio entre 1 y 100. Después, el usuario debe ingresar números intentando descubrir cuál es el correcto.
-
-Cada vez que el usuario escribe un número, el programa compara ese valor con el número secreto. Si el número ingresado es mayor, muestra el mensaje “Muy alto”; si es menor, muestra “Muy bajo”. El proceso se repite hasta que el usuario logre adivinar el número correcto.
-
-Además, el programa lleva un contador de intentos para mostrar cuántas veces el usuario intentó antes de ganar. Para desarrollar este programa se utilizaron variables, estructuras condicionales `if-else`, un ciclo `do while` y funciones para generar números aleatorios.
+Este programa consiste en un juego sencillo para adivinar un número. Primero, el sistema genera automáticamente un número aleatorio entre 1 y 100. Después,
+el usuario debe ingresar números intentando descubrir cuál es el correcto.
+Cada vez que el usuario escribe un número, el programa compara ese valor con el número secreto. Si el número ingresado es mayor, muestra el mensaje “Muy alto”;
+si es menor, muestra “Muy bajo”. El proceso se repite hasta que el usuario logre adivinar el número correcto.
+Además, el programa lleva un contador de intentos para mostrar cuántas veces el usuario intentó antes de ganar. 
